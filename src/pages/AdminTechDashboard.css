@@ -1,0 +1,149 @@
+.section-block {
+  margin-bottom: 40px;
+}
+
+.section-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-block-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 12px 18px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  background-color: var(--color-paper-dim);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table td {
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--color-text-dark);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover td {
+  background-color: var(--color-paper-dim);
+}
+
+.action-btn {
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-right: 6px;
+}
+
+.action-btn:hover {
+  border-color: var(--color-amber);
+  color: var(--color-amber-dark);
+}
+
+.action-btn.primary {
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+  color: var(--color-ink);
+}
+
+.action-btn.primary:hover {
+  background: var(--color-amber-dark);
+  border-color: var(--color-amber-dark);
+  color: white;
+}
+
+.action-btn.teal {
+  background: var(--color-teal);
+  border-color: var(--color-teal);
+  color: white;
+}
+
+.action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.select-inline {
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  font-size: 13px;
+  background: white;
+  margin-right: 8px;
+}
+
+.tab-switch {
+  display: flex;
+  gap: 4px;
+  background: var(--color-paper-dim);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.tab-switch button {
+  padding: 8px 18px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tab-switch button.active {
+  background: white;
+  color: var(--color-text-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.resolution-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  min-height: 60px;
+  margin-bottom: 8px;
+}
+/* Availability select — colored background variant (JS मधून inline style ने override होतो) */
+.select-inline {
+  font-weight: 500;
+}
+
+/* Recent activity / performance bar row hover */
+.details-card > div:hover {
+  background-color: transparent;
+}
