@@ -142,7 +142,7 @@ function ComplaintDetails() {
             <p>{complaint.description}</p>
             {complaint.imagePath && (
               <img
-                src={`http://localhost:8084${complaint.imagePath}`}
+                src={`${import.meta.env.VITE_API_URL || 'http://localhost:8084'}${complaint.imagePath}`}
                 alt="Complaint"
                 style={{ width: '100%', maxWidth: '320px', borderRadius: 'var(--radius-sm)', marginTop: '12px', border: '1px solid var(--color-border)' }}
               />
@@ -155,7 +155,7 @@ function ComplaintDetails() {
               <p>{complaint.resolutionNotes}</p>
               {complaint.resolutionImages && (
                 <img
-                  src={`http://localhost:8084${complaint.resolutionImages}`}
+                  src={`${import.meta.env.VITE_API_URL || 'http://localhost:8084'}${complaint.resolutionImages}`}
                   alt="Resolution"
                   style={{ width: '100%', maxWidth: '320px', borderRadius: 'var(--radius-sm)', marginTop: '12px', border: '1px solid var(--color-border)' }}
                 />
